@@ -88,7 +88,7 @@ import axios from "axios";
 
 export const AuthContext = createContext();
 
-const API_BASE_URL = "https://resume-builder-xq7w.onrender.com";  // 🔹 Define API URL once
+const API_BASE_URL = "https://resume-builder-qcel.onrender.com";  // 🔹 Define API URL once
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
