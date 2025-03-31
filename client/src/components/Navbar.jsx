@@ -2,7 +2,7 @@
 import React, { useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
-
+import Chat from './Chat';
 const Navbar = () => {
   const { user, setUser, logout } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -65,6 +65,9 @@ return (
             <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
           </div>
         )}
+      </div>
+      <div style={{ float: "right", marginRight: "20px" }}>
+        <Chat />
       </div>
     </nav>
   );

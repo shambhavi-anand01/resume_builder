@@ -2,6 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import image from "./resume.png"
+import Chat from './Chat';
 const styles = {
   container: {
     display: "flex",
@@ -49,6 +50,16 @@ const styles = {
     marginBottom: "20px",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
   },
+  chatBox: {
+    position: "absolute",
+    bottom: "20px",
+    right: "20px",
+    width: "300px",
+    backgroundColor: "white",
+    borderRadius: "10px",
+    padding: "10px",
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+  },
 };
 
 function Home() {
@@ -65,6 +76,9 @@ function Home() {
         alt="Resume Builder"
         style={styles.image}
       />
+      <div style={styles.chatBox}>
+        <Chat />
+      </div>
     </div>
   );
 }

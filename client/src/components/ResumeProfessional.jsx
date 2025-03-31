@@ -58,3 +58,9 @@ const styles = {
 
 export default ResumeProfessional;
 
+
+
+
+
+
+

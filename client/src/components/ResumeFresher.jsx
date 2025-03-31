@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import jsPDF from "jspdf";
+// import "./Resume.css";
 
 function ResumeFresher() {
   const [formData, setFormData] = useState({
@@ -57,5 +58,4 @@ const styles = {
 };
 
 export default ResumeFresher;
-
 
